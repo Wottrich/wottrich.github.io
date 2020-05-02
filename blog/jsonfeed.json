@@ -1,0 +1,26 @@
+---
+---
+{
+	"version": "https://jsonfeed.org/version/1",
+	"title": "Lucas Wottrich's Blog",
+	"home_page_url": "http://wottrich.github.io/blog",
+	"feed_url": "http://wottrich.github.io/blog/jsonfeed.json",
+  "updated": "{{ site.time | date_to_json }}",
+  {% if site.author %}
+  "author": {
+    "name": {{ site.author | jsonify }}
+    "url": "https://github.com/Wottrich/",
+  },
+  {% endif %}
+	"items": [
+		 {% for post in site.posts %}
+        {
+          "id": "{{ post.id | jsonify }}",
+          "url": "http://wottrich.github.io{{ post.url }}",
+          "title": "{{ post.title | jsonify }}",
+          "content_html": "{{ post.content | jsonify }}",
+          "date_published": "{{ post.date | date_to_rfc822 }}"
+        }{% unless forloop.last %},{% endunless %}
+	   {% endfor %}
+	]
+}
