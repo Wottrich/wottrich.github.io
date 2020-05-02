@@ -7,7 +7,7 @@
 	"feed_url": "http://wottrich.github.io/blog/jsonfeed.json",
   "updated": "{{ site.time | date_to_json }}",
   "author": {
-    "name": "Lucas Wottrich"
+    "name": "Lucas Wottrich",
     "url": "https://github.com/Wottrich/",
   },
 	"items": [
