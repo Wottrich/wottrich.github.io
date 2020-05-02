@@ -15,7 +15,7 @@
         {
           "id": {{ post.id | jsonify }},
           "url": "http://wottrich.github.io{{ post.url }}",
-          "title": {{ post.title | jsonify }}",
+          "title": {{ post.title | jsonify }},
           "content_html": {{ post.content | jsonify }},
           "date_published": {{ post.date | date_to_rfc822 }}
         }{% unless forloop.last %},{% endunless %}
