@@ -18,6 +18,33 @@ body {
     border-radius: 8px;
 }
 
+main {
+
+    max-width: 800px;
+    top: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    display: block;
+    position: relative;
+    transform: translate(0, -70%);
+    display: block;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    background-color:rgba(0, 0, 0, 0.5);
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+footer, main {
+    text-align: center;
+}
+
 /* Títulos principais */
 h1, h2, h3 {
     color: #007BFF;
