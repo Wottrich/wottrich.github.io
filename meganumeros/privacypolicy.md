@@ -1,6 +1,7 @@
-----
+---
 layout: texts
-----
+---
+
 # Política de privacidade
 Atualmente não coletamos nenhuam informação do usuário.
 
