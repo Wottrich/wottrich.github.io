@@ -1,21 +1,75 @@
-/* Estilo para o corpo da página */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+html {
+    
+    display: block;
+
 }
 
-/* Contêiner principal */
-.container {
-    max-width: 800px;
-    margin: 40px auto; /* Ajuste de margem para espaçamento nas bordas */
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+body {
+ 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto Mono', sans-serif;
+    display: block;
+    margin: 8px;
+
+    color: #acb8b4;
+
+}
+
+html, body {
+    height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h1, p, a {
+
+    color: #acb8b4;
+
+}
+
+.zoom_in {
+    animation: zoominoutsinglefeatured 1s forwards;
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(0,0);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+  
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+} 
+
+a {
+    text-decoration: none;
+    -webkit-transition: color .25s ease;
+    -o-transition: color .25s ease;
+    transition: color .25s ease;
+}
+
+a:hover {
+    color: #ffffff;
 }
 
 main {
@@ -33,6 +87,35 @@ main {
 
 }
 
+div.photo_credits {
+
+    float: right;
+    margin: 0;
+    padding: 0;
+    font-size: 0.5em;
+    margin-right: 10px;
+
+}
+
+ul {
+    margin-right: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+canvas {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
 footer {
     position: fixed;
     left: 0;
@@ -43,67 +126,4 @@ footer {
 
 footer, main {
     text-align: center;
-}
-
-/* Títulos principais */
-h1, h2, h3 {
-    color: #007BFF;
-    margin-top: 20px;
-}
-
-/* Parágrafos */
-p {
-    margin: 10px 0;
-}
-
-/* Links */
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Listas */
-ul {
-    margin: 10px 0;
-    padding-left: 20px;
-}
-
-ul li {
-    margin: 5px 0;
-}
-
-/* Tabelas */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-/* Responsividade */
-@media (max-width: 600px) {
-    .container {
-        margin: 20px 10px; /* Ajuste de margem para responsividade */
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
 }
