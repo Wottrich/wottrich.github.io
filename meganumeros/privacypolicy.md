@@ -1,5 +1,5 @@
 ---
-layout: texts
+layout: privacypolicylayout
 ---
 
 # Política de privacidade
