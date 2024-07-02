@@ -11,7 +11,7 @@ body {
 /* Contêiner principal */
 .container {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 40px auto; /* Ajuste de margem para espaçamento nas bordas */
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -68,6 +68,7 @@ th, td {
 /* Responsividade */
 @media (max-width: 600px) {
     .container {
+        margin: 20px 10px; /* Ajuste de margem para responsividade */
         padding: 10px;
     }
 
